@@ -1,0 +1,22 @@
+"// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity ^0.8.0;
+
+// declare inside function body. store in stacks
+// if we create state variable as public then we need to create a get function. get function will autometical generate after public keyword
+
+contract local
+{
+     uint age = 10;
+    function getter()  view public returns(uint) { //low gas cost cause we are not doing any changes
+    return age;
+   }
+    // for fixed change in variable 
+    function setter()  public
+    {age=age+1;
+    }
+        // for fixed change in variable 
+    function setter(uint newage)  public //high gas cost cause we are doing any changes
+        {age=newage;  // new destroy the inalized number and set newage as the original
+        }
+   }"
