@@ -1,0 +1,30 @@
+"// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity ^0.8.0;
+
+// are compile time declearation, store at contract stroage(ethereum blockchain)
+
+contract state
+{
+    // METHOD 1 TO DECLEAR STATE VARIABLE declear varibale after intialize
+    uint public age;
+    uint public num; // a get function will create automatically but public keyword before  variable name
+  // we can declear varibale after intialize. for example: 
+  // unit public age;
+  //  age = 10;    (It will show an error)          
+  
+    // METHOD 2 TO DECLEAR STATE VARIABLE using constructor
+     constructor() {
+    num= 10;  }
+
+    // we can't use constructor for same variable
+
+
+    // METHOD 3 TO DECLEAR STATE VARIABLE using setter function
+
+   function setAge() public
+    {
+        age=10;
+    }}
+// consructor print the output with on first click but in set, first the out print as variable type then we can use as set function
+// high gas cost"
