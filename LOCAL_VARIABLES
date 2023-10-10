@@ -1,0 +1,19 @@
+"// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity ^0.8.0;
+
+// declare inside function body. store in stacks
+
+contract local
+{
+    function store() pure public returns(uint) // pure funtion is used to show nither change are happening at the state variables and nor read our variables
+   { 
+    string memory name=""Aastha""; // error:- Data location must be ""storage"", ""memory"" or ""calldata"" for variable, because string datatype is store in contract storeage by default so we use memory keyword after string 
+
+    uint age = 10; // local variable
+    return age;
+   }}
+
+   // string store in contract storeage and string memory store in memory.
+   // no gas cost
+   // memory keyword cant use at contract level"
