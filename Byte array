@@ -1,0 +1,17 @@
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity ^0.8.0;
+// Byte array
+// everything that store in byte array will be store in hexadecimal form
+//fixed byte arrat can not be modified
+contract arr {
+    bytes3 public b3;
+    bytes2 public b2;
+
+    function setter() public{
+    b3 ='123';
+    b2 ='12';
+//  b2[0]= '4'; ERROR - single byte in fixed byte arrat can not be modified
+
+}
+}
