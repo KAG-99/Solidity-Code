@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
 
 pragma solidity ^0.8.0;
-// Byte array
+// Byte size fixed array
 // everything that store in byte array will be store in hexadecimal form
 //fixed byte arrat can not be modified
 contract arr {
