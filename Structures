@@ -1,0 +1,25 @@
+ // SPDX-License-Identifier: MIT
+pragma solidity ^0.8;
+
+ struct DevotedBunch
+ {
+    uint level;
+    string area;
+ }
+
+contract Office{
+    DevotedBunch public D1;
+constructor(uint _level, string memory _area)
+{
+    D1.level=_level;
+    D1.area=_area;
+}
+function Change(uint _level, string memory _area) public 
+{
+    DevotedBunch memory new_data=DevotedBunch({
+        level:_level,
+        area:_area
+        });
+        D1= new_data;
+    }
+}
